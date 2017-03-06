@@ -9,8 +9,7 @@
 title: Niko Niittyranta
 email: nniittyr@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Young junior developer. Interested in web development ( ie. python, django, PHP, javascript, html, css.)
-  Currently working as Customer Process Specialist but always looking for new opportunities.
+A passionate young web developer, future javascript wizard
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "nikomon.github.io" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
