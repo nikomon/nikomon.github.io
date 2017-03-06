@@ -13,3 +13,5 @@ I'm 25 year old, soon to be B.B.A. graduate. Specialization in Information Techn
 You can find the source code for Jekyll at
 {% include icon-github.html username="jekyll" %} /
 [jekyll](https://github.com/jekyll/jekyll)-->
+
+<img src="https://scontent.fhel1-1.fna.fbcdn.net/v/t1.0-9/12247155_10207958039658259_2715253856107250056_n.jpg?oh=58864759bf4322db38274612bfe5dcd8&oe=592D4112" alt="Smiley face" height="42" width="42">
