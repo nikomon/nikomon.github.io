@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My first line of code ever published!"
+title:  "First line of code in Jekyll published!"
 date:   2017-03-08 11:00:15 +0000
 categories: code published
 ---
