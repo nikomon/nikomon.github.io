@@ -11,23 +11,25 @@ var validationCheck = function() {
   var isEmpty = false;
   $(".data-required").each(function() {
     if (!$(this).is(":hidden")) {
-
       var isChecked = {
         radio: function(ele) {
+          var radioIsChecked = false;
           if (ele.type == "radio") {
             $("input[name='" + ele.name + "']").each(function() {
-              if (ele.checked) {
-                return false;
+              console.log(this.checked);
+              if (this.checked) {
+                radioIsChecked = true;
+                return true;
               }
             });
 
-            return true;
+            return (radioIsChecked) ? true : false;
 
           }
         },
+
         text: function(ele) {
           if (ele.value.length != 0) {
-            console.log()
             return false;
           } else {
             return true;
@@ -38,7 +40,6 @@ var validationCheck = function() {
       switch (this.type) {
         case 'text':
           isChecked.text = isChecked.text(this);
-          console.log(isChecked.text);
           break;
         case 'radio':
           isChecked.radio = isChecked.radio(this);
@@ -47,7 +48,7 @@ var validationCheck = function() {
           break;
       }
 
-      if (isChecked.text == true || isChecked.radio == true) {
+      if (isChecked.text == true || isChecked.radio == false) {
         return isEmpty = true;
       }
     }
@@ -59,7 +60,4 @@ var validationCheck = function() {
     return true;
   }
 }();
-
-console.log(validationCheck);
-
 ```
